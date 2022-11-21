@@ -1,6 +1,18 @@
 1. Install  :             apt install sqlite3;
 2. Create DB:             sqlite3 userDB;
 3. Create Table:           create table TBName ("id" integer primary key autoincrement, username char(25),password char(25));
-4. Backup:                 echo .dump | sqlite3 MyDBName1.sqlite > MYDBNameBackup.sqlite
+4. Backup:                 echo .dump | sqlite3 MyDBName1.sqlite > MYDBNameBackup.sqlite    #Use this method!
 5. Revert from backup:    sqlite3 MYDBName2.sqlite < MYDBNameBackup.sqlite
 6. Help:                  .help | .table | .schema TBName
+7. .backup: Note            sqlite3 my_database.sq3 ".backup 'backup_file.sq3'" | sqlite3 mydatabase; .backup backupfile
+8. Let'start populating:
+9. .quit:                 .quit to get out
+
+
+
+7. Looks like .backup is schema only no data.
+
+8. 
+sqlite> INSERT INTO users ( username,password) VALUES ( "JD","JD");
+validate: select * from users;
+9.
