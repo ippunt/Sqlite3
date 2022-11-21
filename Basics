@@ -3,3 +3,4 @@
 3. Create Table:           create table TBName ("id" integer primary key autoincrement, username char(25),password char(25));
 4. Backup:                 echo .dump | sqlite3 MyDBName1.sqlite > MYDBNameBackup.sqlite
 5. Revert from backup:    sqlite3 MYDBName2.sqlite < MYDBNameBackup.sqlite
+6. Help:                  .help | .table | .schema TBName
