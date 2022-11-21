@@ -1,5 +1,5 @@
-1. Install 
-
-
-
-1. apt install sqlite3
+1. Install  :             apt install sqlite3;
+2. Create DB:             sqlite3 userDB;
+3. Create Table:           create table TBName ("id" integer primary key autoincrement, friends char(25));
+4. Backup:                 echo .dump | sqlite3 MyDBName1.sqlite > MYDBNameBackup.sqlite
+5. Revert from backup:    sqlite3 MYDBName2.sqlite < MYDBNameBackup.sqlite
