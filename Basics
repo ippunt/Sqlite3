@@ -7,6 +7,7 @@
 7. .backup: Note            sqlite3 my_database.sq3 ".backup 'backup_file.sq3'" | sqlite3 mydatabase; .backup backupfile
 8. Let'start populating:
 9. .quit:                 .quit to get out
+10. CSV data into database and tables. 
 
 
 
@@ -16,3 +17,5 @@
 sqlite> INSERT INTO users ( username,password) VALUES ( "JD","JD");
 validate: select * from users;
 9.
+
+10. 
